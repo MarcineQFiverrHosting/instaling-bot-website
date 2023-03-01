@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    margin-bottom: 10px;
+    color: #181818;
+}
+h2{
+    margin: 0px;
+}
+h3{
+    color: #5371f0;
+}
+#banner_p{
+    margin-bottom: 10px;
+    color: #888;
+}
+#arch{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+    font-weight: 300;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 64px);
+}
+#banner_main{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#whats_new{
+    background-color: #F6F6F6;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.icon-windows{
+    margin-right: 5px;
+}
+.download{
+    display: flex;
+    color: white;
+    background-color: #ff4c31;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 700;
+    padding-right: 15px;
+    align-items: center;
+    transition: background-color 0.2s;
+    border-radius: 12px;
+}
+.download:hover{
+    background-color: #ff0000;
+}
+#history_container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 400px);
+    background-color: #5371f0;
+    color: white;
+    width: 100%;
+}
+#history_container div, #history_container p{
+    opacity: 100;
+}
+.history_cell{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.history_p{
+    font-size: 14px;
+}
+h3{
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+h4{
+    background-color: #5371f0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 48px;
+}
+h5{
+    color: #ffb400;
+    font-size: 18px;
+}
+#bottom{
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    padding: 50px 0px;
+}
+#donate{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: #181818;
+}
+#contact{
+    padding-right: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    box-sizing: border-box;
+}
+footer{
+    background-color: white;
+    color: #181818;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+form{
+    width: 200px;
+    height: 300px;
+    background-color: #ff4c31;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+#donate_btn{
+    background-color: #ffb400;
+    width: fit-content;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    border-radius: 12px;
+}
+#donate_btn:hover{
+    background-color: #ffb400;
+}
+input{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+h6{
+    color: white;
+    font-size: 32px;
+}
+form a{
+    width: 100%;
+    box-sizing: border-box;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ffb400;
+}
+form a{
+    transition: background-color 0.2s;
+}
+form a:hover, #donate_btn:hover{
+    background-color: #fcea20;
+}
+textarea{
+    width: 100%;
+    height: 60px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+button, input, textarea{
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+button:hover{
+    background-color: #F6F6F6;
+}
+h4{
+    padding-top: 50px;
+    text-align: center;
+    height: auto;
+}
+#bb8_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arch:hover{
+    color: #888;
+}
+@media only screen and (max-width: 800px) {
+    #banner{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #whats_new_p{
+        width: 90%;
+    }
+    #history_container{
+        grid-template-columns: repeat(1, 400px);
+        text-align: center;
+    }
+    #img2{
+        grid-row: 4;
+    }
+    #bottom{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    #donate{
+        margin-bottom: 50px;
+    }
+    #banner_main{
+        margin: 20px 0;
+    }
+    #bb8{
+        margin-top: 20px;
+    }
+    iframe{
+        width: 90vw;
+        height: 50vw;
+    }
+    #contact, #donate{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    h3, h4{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #bb8{
+        width: 90%;
+    }
+    #banner_main{
+        width: 90%;
+    }
+    .history_cell{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        width: 90%;
+    }
+    #history_p{
+        width: 90%;
+    }
+    #donate{
+        padding: 0;
+        width: 90%;
+    }
+    #history_container{
+        grid-template-columns: repeat(1, 100%);
+    }
+    form{
+        width: 100%;
+    }
+    #contact{
+        width: 90%;
+    }
+    form a, input, textarea{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    header{
+        display: none;
+    }
+    #banner_main{
+        align-items: center;
+        text-align: center;
+    }
+}
+iframe{
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
